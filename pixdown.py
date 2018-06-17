@@ -1,21 +1,14 @@
-import os
-import sys
-import shutil
-import requests
 from bs4 import BeautifulSoup
-import re
-import glob
-import imageio
+import os, sys, shutil, requests, re, glob, imageio
 
 help_dialog = "please specify the pixiv url wrapped in quotes \"image_url\""
 image_url = "https://i.pximg.net/img-original/img/"
+mode = ".jpg"
 
 """
 natural sorting from:
 https://blog.codinghorror.com/sorting-for-humans-natural-sort-order/
 """
-
-mode = ".jpg"
 
 def sort_nicely(l):
     convert = lambda text: int(text) if text.isdigit() else text
