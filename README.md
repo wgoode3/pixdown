@@ -8,3 +8,9 @@ Ugoira Downloading Thing
 * ImageIO
 * gifsicle
 * ffmpeg
+
+## example usage
+
+```shell
+python pixdown.py "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=69150195"
+```
